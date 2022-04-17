@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-align: center;
+    font-size: 60px;
+    color: brown;
+    background-color: aquamarine;
+    padding: 20px 0px;
+}
+h1::before{
+    content: "Before---";
+    color: rgb(255, 0, 0);
+}
+h1::after{
+    content: "---After";
+    color: rgb(255, 0, 0);
+}
+
+.button1{
+    text-align: center;
+    margin-top: 50px;
+}
+.click1{
+    font-size: 50px;
+    text-decoration: none;
+    background-color: cadetblue;
+    color: #fff;
+    padding: 30px 60px;
+    display: inline-block;
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
+}
+.click1::before{
+    content: "";
+    height: 100%;
+    width: 0%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: crimson;
+    border-radius: 20px;
+    transition: .5s;
+    z-index: -1;
+}
+.click1:hover::before{
+    width: 100%;
+}
+
+.button2{
+    text-align: center;
+    margin-top: 50px;
+}
+.click2{
+    text-decoration: none;
+    font-size: 50px;
+    background-color: rgb(99, 133, 196);
+    color: #fff;
+    display: inline-block;
+    padding: 30px 60px;
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
+}
+.click2::before{
+    content: "";
+    height: 100%;
+    width: 0%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: brown;
+    border-radius: 20px;
+    transition: .5s;
+    z-index: -1;
+}
+.click2:hover::before{
+    width: 100%;
+}
+
+.button3{
+    text-align: center;
+    margin-top: 50px;
+}
+.click3{
+    text-decoration: none;
+    font-size: 50px;
+    background-color: darksalmon;
+    color: #fff;
+    display: inline-block;
+    padding: 30px 60px;
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
+}
+.click3::before{
+    content: "";
+    height: 0%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: darkslategray;
+    border-radius: 20px;
+    transition: .5s;
+    z-index: -1;
+}
+.click3:hover::before{
+    height: 100%;
+}
+
+.button4{
+    text-align: center;
+    margin-top: 50px;
+}
+.click4{
+    text-decoration: none;
+    font-size: 50px;
+    background-color: darkkhaki;
+    color: #fff;
+    display: inline-block;
+    padding: 30px 60px;
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
+}
+.click4::before{
+    content: "";
+    height: 0%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: darkcyan;
+    border-radius: 20px;
+    transition: .5s;
+    z-index: -1;
+}
+.click4:hover::before{
+    height: 100%;
+}
+
+.list{}
+.list ul{
+    margin-top: 100px;
+    list-style: none;
+    text-align: center;
+}
+.list ul li{}
+.list ul li a{
+    font-size: 100px;
+    text-decoration: none;
+}
+.list ul li::before{
+    content: "\f560";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    font-size: 80px;
+    color: indianred;
+    display: inline-block;
+    margin-right: 40px;
+    transition: .5s;
+}
+
+.list ul li:hover::before{
+    color: aqua;
+}
+.list ul li a:hover{
+    color: rgb(128, 255, 0);
+}
